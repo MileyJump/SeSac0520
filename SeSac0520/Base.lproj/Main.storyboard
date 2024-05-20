@@ -76,6 +76,9 @@
                         <outlet property="threeLabel" destination="xYy-eY-hJq" id="Pse-Oy-3mi"/>
                         <outlet property="twoButton" destination="nG2-Ca-l1n" id="wDx-Bi-sUr"/>
                         <outlet property="twoLabel" destination="2dA-FT-qRN" id="qKA-6c-DWr"/>
+                        <outletCollection property="labelList" destination="e0X-kZ-NPq" collectionClass="NSMutableArray" id="Ivn-lb-qzf"/>
+                        <outletCollection property="labelList" destination="2dA-FT-qRN" collectionClass="NSMutableArray" id="vCM-sY-Nix"/>
+                        <outletCollection property="labelList" destination="xYy-eY-hJq" collectionClass="NSMutableArray" id="2Jd-Lf-Sed"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

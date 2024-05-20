@@ -8,6 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet var labelList: [UILabel]!
 
     @IBOutlet var oneButton: UIButton!
     @IBOutlet var twoButton: UIButton!
@@ -16,6 +18,8 @@ class ViewController: UIViewController {
     @IBOutlet var oneLabel: UILabel!
     @IBOutlet var twoLabel: UILabel!
     @IBOutlet var threeLabel: UILabel!
+    
+    
     
     var count = [0, 0, 0]
     
@@ -40,17 +44,19 @@ class ViewController: UIViewController {
     // 1. 어떤 버튼을 클릭했는지 어떻게 아나요?
     // -> currentTitle(옵셔널 및 버전 조심)
     // -> tag
+    // 2. 아웃렛 어떻게 못 할까? => OutletCollection
+    // ->
     @IBAction func oneButtonClicked(_ sender: UIButton) {
         
         count[sender.tag] = count[sender.tag] + 1
         
-    
-        oneLabel.text = "\(count[0])번"
-        twoLabel.text = "\(count[1])번"
-        threeLabel.text = "\(count[2])번"
+//        oneLabel.text = "\(count[0])번"
+//        twoLabel.text = "\(count[1])번"
+//        threeLabel.text = "\(count[2])번"
+        
+        labelList[sender.tag].text = "\(count[sender.tag])번"
+        
     }
-    
-    
     
     // 매개변수 (Parameter)
     // 외부 매개변수(Argument Label) ex. thisIsTextColor
